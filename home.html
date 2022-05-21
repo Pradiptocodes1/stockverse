@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stockverse</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section id="header">
+      <nav class="navigation">
+        <div class="nav-left">
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li>><a href="about.html">About</li></a>
+
+            <div class="ref" onmouseout="nodisplay()" onmouseover="display()">
+              <li>
+                <button onclick="display()" class="b1" onmouseover="display()">
+                  Reference
+                </button>
+              </li>
+              <div id="Dropdown" class="links">
+                <a href="http://www.moneycontrol.com/">moneycontrol</a>
+                <a href="https://trendlyne.com/">trendlyne</a>
+                <a href="https://www.nseindia.com/">nseindia</a>
+                <a href="https://www.worldbank.org/">worldbank</a>
+                <a href="https://ticker.finology.in/">finology</a>
+              </div>
+            </div>
+
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <button class="btn">Log in</button>
+          <button class="btn">Sign up</button>
+        </div>
+      </nav>
+    </section>
+
+    <section id="hero">
+      <div class="logo">
+        <img src="" />
+      </div>
+      <h1>Stock analysis and guidance tool for teenagers in India</h1>
+
+      <div class="wrapper">
+        <div class="x">
+          <input
+            type="text"
+            id="mySearch"
+            class="input"
+            onkeyup="key()"
+            placeholder="Search Companies.."
+            title="Type in a category"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <h2>StockVerse</h2>
+      <p>
+        <br />
+        An initiative by Teen-stonks to provide an idea <br />
+        about the stock market and it's importance to teenagers.
+      </p>
+
+      <h4><br />Follow us</h4>
+
+      <div class="icons">
+        <a href="https://www.facebook.com/aditya.roysha/" target="_blank"
+          ><img src="image/f.png" alt=""
+        /></a>
+        <a href="" target="_blank"> <img src="image/i.png" alt="" /></a>
+
+        <a href="https://github.com/" target="_blank"
+          ><img src="image/g.png" alt=""
+        /></a>
+        <a href="" target="_blank"> <img src="image/l.png" alt="" /></a>
+      </div>
+      <div class="copyright">
+        <p>&copy;2022, Teen-stonks</p>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
