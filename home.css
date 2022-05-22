@@ -67,6 +67,8 @@ body {
   transition: 0.2s;
   margin-right: 30px;
   margin-top: 5px;
+  display: none;
+  margin-left: 400px;
 }
 
 h1 {
@@ -84,7 +86,7 @@ h1 {
 }
 
 .wrapper {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -95,6 +97,7 @@ h1 {
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 200px;
 }
 
 .wrapper .input {
@@ -123,7 +126,7 @@ h1 {
   padding: 50px;
   box-sizing: border-box;
   background: #fcfcfc;
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
@@ -184,6 +187,7 @@ h1 {
 
 .x {
   position: absolute;
+
 }
 
 #items {
@@ -208,9 +212,8 @@ h1 {
   color: white;
   cursor: grab;
 }
-#viu{
-  position: relative;
-  z-index: -10;
-  width: 500px;
-  transform: translate(350px,-50px);
+
+.stock-images 
+{
+  margin-left: 300px;
 }
