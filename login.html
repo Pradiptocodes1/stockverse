@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Log In</h1>
+      <form onsubmit="sendEmail();reset();return false">
+        
+        <label>Email</label>
+        <input id="email" type="email" placeholder="Enter your password" />
+        <label>Password</label>
+        <input type="password" placeholder="Enter your email" />
+        <p><a id="cer" href="#">forgotpassword? </a></p>
+        
+        <button id="huu">Log in</button>
+      </form>
+      
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendEmail(){
+    Email.send({
+     SecureToken:"b03d31bd-6a39-469d-9038-cfb613ebc96e",
+      
+     To : 'anubhav15roysha@outlook.com',
+    //  From :'adityaroysha05@gmail.com',
+     From : document.getElementById("email").value,
+   
+    Subject : "For Any query",
+    Body : "hello my query is"
+}).then(
+  message => alert(message)
+);
+  }
+</script>
+  </body>
+</html>
