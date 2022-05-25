@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs</title>
+    <link rel="stylesheet" href="Contactus.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<section id="header">
+    <nav class="navigation">
+      <div class="nav-left">
+        <ul>
+          <li><a  href="index.html">Home</a></li>
+          <li><a href="about.html" href="about.html">About</a></li>
+
+
+          <div class="ref" onmouseout="nodisplay()" onmouseover="display()">
+            <li><button onclick="display()" class="b1" onmouseover="display()"> References
+              </button></li>
+            <div id="Dropdown" class="links">
+              <a href="http://www.moneycontrol.com/">moneycontrol</a>
+              <a href="https://trendlyne.com/">trendlyne</a>
+              <a href="https://www.nseindia.com/">nseindia</a>
+              <a href="https://www.worldbank.org/">worldbank</a>
+              <a href="https://ticker.finology.in/">finology</a>
+            </div>
+          </div>
+
+
+          <li><a href="calculator.html">Calculator</a></li>
+          <li><a class="active" href="contactus.html">ContactUs</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="login.html"> <button class="btn" onclick="togle()"> Log in</button></a>
+        <a href="signup.html"><button class="btn">Sign up</button></a> 
+      </div>
+      </nav>
+      </section>
+<body>
+   
+    <h1>Contact us</h1>
+    <div>
+    <p>We love questions and feedback-and we're always happy to help!
+        <br>
+        Here are some ways to contact us.
+    </p>
+</div>
+<div class="contents">
+    <h2>
+        Send us a message
+    </h2>
+    <p>Send us a message we'll respond within 24 hours.</p>
+    <div class="inside_box">
+    <form action="https://formspree.io/f/xyyooewe" method="POST" ;reset();>
+        <table>
+            <tbody>
+                <td><label for="Name">Full Name </label>
+                    <br>
+                    <input type="text" name="Full Name" placeholder="Type full name here">
+                    <br>
+                    <label for="">Email</label>
+                    <br>
+                    <input id="email" type="email" name="Email" placeholder="Type email here">
+                    <br></td>
+                    <td><label for="">Telephone</label>
+                        <br>
+                        <input type="tel" name="Telephone" placeholder="Phone number">
+                        <br>
+                        <label for="">Organisation</label>
+                        <br>
+                        <input type="text" name="Organisation" placeholder="Organisation name">
+                        <br></td>
+            </tbody>
+        </table>
+        <textarea name="query" id="" cols="65" rows="5" placeholder="Type your message here"></textarea>
+        <br>
+        <button id="tre" type="submit">Submit</button>
+
+    </form>
+</div>
+</div>
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendEmail(){
+    Email.send({
+      SecureToken:"8d1bd410-8c4c-4879-8cbe-830a2a537627",
+    To : 'adityaroysha05@gmail.com',
+    From : document.getElementById("email").value,
+   
+    Subject : "For Any query",
+    Body : "hello my query is"
+}).then(
+  message => alert(message)
+);
+  }
+</script> -->
+<script src="index.js"></script>
+<section id="footer">
+    <h2>StockVerse</h2>
+    <p><br>
+      An initiative by Teen-stonks to provide an idea <br>
+      about the stock market and it's importance to teenagers.
+    </p>
+
+    <h4><br>Follow us</h4>
+
+    <div class="icons">
+      <a href="https://www.facebook.com/aditya.roysha/" target="_blank"><img src="image/f.png" alt="" /></a>
+      <a href="" target="_blank"><img src="image/i.png" alt="" /></a>
+      
+      <a href="https://github.com/" target="_blank"><img src="image/g.png" alt="" /></a>
+      <a href="" target="_blank"><img src="image/l.png" alt="" /></a>
+    </div>
+    <div class="copyright">
+      <p>&copy;2022, Teen-stonks
+      </p>
+    </div>
+  </section> 
+</body>
+</html>
