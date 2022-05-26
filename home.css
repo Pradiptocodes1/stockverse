@@ -221,7 +221,7 @@ h1 {
 #viu{
   height: 400px;
   width: 400px;
-  transform: translate(400px,0px);
+  transform: translate(500px,0px);
 }
 #zgt{
   font-size: larger;
