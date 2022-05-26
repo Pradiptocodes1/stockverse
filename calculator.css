@@ -1,0 +1,52 @@
+body {
+  background-color: #01012e;
+  font-family: "Josefin Sans";
+}
+
+.signup-box {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  background-color: white;
+  border-radius: 3px;
+  transform: translate(0px, 50px);
+}
+
+h1 {
+  text-align: center;
+  padding-top: 15px;
+}
+
+form {
+  width: 400px;
+  margin-left: 50px;
+}
+
+form label {
+  display: flex;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+form input {
+  width: 20%;
+  padding: 7px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+}
+
+input[type="button"] {
+  width: 200px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background-color: #01012e;
+  color: white;
+  font-size: 18px;
+}
+
+span input{
+  width: 200px;
+}
