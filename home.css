@@ -217,3 +217,12 @@ h1 {
 {
   margin-left: 300px;
 }
+
+#viu{
+  height: 400px;
+  width: 400px;
+  transform: translate(400px,0px);
+}
+#zgt{
+  font-size: larger;
+}
