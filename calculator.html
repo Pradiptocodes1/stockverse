@@ -4,25 +4,103 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up</title>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="home1.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="calculator.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="calculator.css">
   </head>
+
   <body>
-    <div class="signup-box">
-      <h1>Stockverse Calculator</h1>
-      <form>
-        I want to know the returns that I would have earned <br> <br> by investing
-        Rs <input type="number" placeholder="100000" /> for a period of <br> <br> <input type="number" placeholder="12" />
-       months in <input type="text" placeholder="Lumpsum" /> in <input type="text" placeholder="Equity" /> <br> <br>
-      <span> <input type="text" placeholder="Enter a stock name" /> </span><br> 
-       <input type="button" value="Calculate" />
-      </form>
-    </div>
+    <section id="header">
+      <nav class="navigation">
+        <div class="nav-left">
+          <ul>
+            <li><a  href="home.html">Home</a></li>
+            <li><a href="about.html">About</li></a>
+
+            <div class="ref" onmouseout="nodisplay()" onmouseover="display()">
+              <li>
+                <button onclick="display()" class="b1" onmouseover="display()">
+                  Reference
+                </button>
+              </li>
+              <div id="Dropdown" class="links">
+                <a href="http://www.moneycontrol.com/">moneycontrol</a>
+                <a href="https://trendlyne.com/">trendlyne</a>
+                <a href="https://www.nseindia.com/">nseindia</a>
+                <a href="https://www.worldbank.org/">worldbank</a>
+                <a href="https://ticker.finology.in/">finology</a>
+              </div>
+            </div>
+
+            <li><a class="active" href="calculator.html">Calculator</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+           <a href="login.html"> <button class="btn" onclick="togle()"> Log in</button></a>
+        <a href="signup.html"><button class="btn">Sign up</button></a> 
+        </div>
+      </nav>
+    </section>
+
+    
+      <div class="signup-box">
+        <h1>Stockverse Calculator</h1>
+        <form>
+          
+  
+          I want to know the returns that I would have earned <br>
+           <br> by investing
+          Rs <input type="number" id="money" placeholder="100000" />
+           for a period of <br> <br> <input type="number" id="year" placeholder="12" />
+  
+         months in 
+            <input type="text" id="stock" placeholder="Enter a stock name" /> 
+        <br> 
+        <span id="piv">* stock name is from the list from home page without the suffix </span>
+         <button id="new" onclick="Multi()">Calculate</button>
+        </form>
+      </div>
+      <script  src="calculator.js"></script>
+     
+    
+  
+    <section id="footer">
+      <h2>StockVerse</h2>
+      <p>
+        <br />
+        An initiative by Teen-stonks to provide an idea <br />
+        about the stock market and it's importance to teenagers.
+      </p>
+
+      <h4><br />Follow us</h4>
+
+      <div class="icons">
+        <a href="https://www.facebook.com/aditya.roysha/" target="_blank"
+          ><img src="image/f.png" alt=""
+        /></a>
+        <a href="https://www.instagram.com/singhvikash7077/?hl=en" target="_blank"> <img src="image/i.png" alt="" /></a>
+
+        <a href="https://github.com/Ssakshid" target="_blank"
+          ><img src="image/g.png" alt=""
+        /></a>
+        <a href="" target="_blank"> <img src="image/l.png" alt="" /></a>
+      </div>
+      <div class="copyright">
+        <p>&copy;2022, Teen-stonks</p>
+      </div>
+    </section>
+    <script src="index.js"></script>
   </body>
 </html>
+
