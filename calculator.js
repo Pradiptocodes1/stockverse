@@ -7,7 +7,7 @@ function Multi(){
     var Stock_name = document.getElementById("stock").value;
     
     switch(Stock_name){
-        case "Asian paints": 
+        case "Asian Paints": 
         var RI = 1.67;
         var Stock_value=3050;
         break;
