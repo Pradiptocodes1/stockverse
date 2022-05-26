@@ -5,11 +5,11 @@ body {
 
 .signup-box {
   width: 500px;
-  height: 500px;
+  height: 300px;
   margin: auto;
   background-color: white;
   border-radius: 3px;
-  transform: translate(0px, 50px);
+  transform: translate(0px, -100px);
 }
 
 h1 {
@@ -37,16 +37,30 @@ form input {
   outline: none;
 }
 
-input[type="button"] {
-  width: 200px;
-  height: 35px;
+#new{
+  width: 150px;
+  height: 50px;
   margin-top: 20px;
   border: none;
   background-color: #01012e;
   color: white;
   font-size: 18px;
+  border-radius: 5px;
+  
+  cursor: pointer;
+  transform: translateX(200px);
+  transform: translateY(10px);
 }
 
 span input{
   width: 200px;
+}
+#stock{
+    width: 120px;
+    
+}
+#piv{
+  margin-top: 30px;
+    color: red;
+    font-size: smaller;
 }
