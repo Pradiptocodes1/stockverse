@@ -16,23 +16,40 @@
   <body>
     <div class="signup-box">
       <h1>Sign Up</h1>
-      <form>
+      <form action="https://formspree.io/f/mdobbegn" method="POST" >
         <label>First Name</label>
-        <input type="text" placeholder="" />
+        <input type="text" name="firstname" placeholder="" />
         <label>Last Name</label>
-        <input type="text" placeholder="" />
+        <input type="text" name="lastname" placeholder="" />
         <label>Contact No</label>
-        <input type="tel" placeholder="" />
+        <input type="tel" name="Contact" placeholder="" />
         <label>Email</label>
-        <input type="email" placeholder="" />
+        <input id="email" name="email" type="email" placeholder="" />
         <label>Password</label>
-        <input type="password" placeholder="" />
+        <input type="password" name="password" placeholder="" />
         <label>Confirm Password</label>
         <input type="password" placeholder="" />
-        <a href="home.html">
-        <input type="button" value="Submit" /></a>
+        
+        <button type="submit">submit</button>
       </form>
-      <p>Already have an account?<a href="#"> Login</a></p>
+      <p>Already have an account?<a href="login.html"> Login</a></p>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendEmail(){
+    Email.send({
+     SecureToken:"b03d31bd-6a39-469d-9038-cfb613ebc96e",
+      
+     To : 'anubhav15roysha@outlook.com',
+    //  From :'adityaroysha05@gmail.com',
+     From : document.getElementById("email").value,
+   
+    Subject : "For Any query",
+    Body : "hello my query is"
+}).then(
+  message => alert(message)
+);
+  }
+</script>
   </body>
 </html>
